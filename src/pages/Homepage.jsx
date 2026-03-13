@@ -1,6 +1,8 @@
 import "../assets/css/styles.css"
 import "../components/Header.jsx"
 import Header from "../components/Header.jsx";
+import Contador from "../components/Contador.jsx";
+import Slideshow from "../components/Slideshow.jsx";
 import Table from "../components/Table.jsx";
 
 const Homepage = () => {
@@ -9,7 +11,8 @@ const Homepage = () => {
             <Header/>
             <main>
 
-
+                <Contador/>
+                <Slideshow/>
                 <Table/>
             </main>
         </>
