@@ -6,6 +6,7 @@ import Table from "../components/Table.jsx";
 import Descricao from "../components/Descricao.jsx";
 import Parceiros from "../components/Parceiros.jsx";
 import OutrosEventos from "../components/OutrosEventos.jsx";
+import Footer from "../components/Footer.jsx";
 
 const Homepage = () => {
     return (
@@ -23,6 +24,7 @@ const Homepage = () => {
                 </div>
 
             </main>
+            <Footer/>
         </>
     )
 }
