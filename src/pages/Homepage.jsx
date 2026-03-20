@@ -7,6 +7,7 @@ import Descricao from "../components/Descricao.jsx";
 import Parceiros from "../components/Parceiros.jsx";
 import OutrosEventos from "../components/OutrosEventos.jsx";
 import Footer from "../components/Footer.jsx";
+import Galeria from "../components/Galeria.jsx";
 
 const Homepage = () => {
     return (
@@ -19,6 +20,7 @@ const Homepage = () => {
                     <Slideshow/>
                     <Descricao/>
                     <Parceiros/>
+                    <Galeria/>
                     <OutrosEventos/>
                     <Table/>
                 </div>
