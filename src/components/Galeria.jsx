@@ -3,14 +3,17 @@ import figuras from '../assets/json/entidades.json';
 
     const Entidades= figuras["Entidades"]
 
+
     const Entidade = ({nome,img,highlight,desc}) => {
 
-    return (
+        const IMGPATH= "../../public/images/"
+
+        return (
         <div>
             <h2>
                 {nome}
             </h2>
-            <img src={img} alt={nome}/>
+            <img src={IMGPATH + img} alt={nome} />
             <h2>
                 {highlight}
             </h2>
@@ -20,6 +23,8 @@ import figuras from '../assets/json/entidades.json';
         </div>
     )
     }
+
+
 
 
     const Galeria =() => {

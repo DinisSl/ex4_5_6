@@ -1,4 +1,4 @@
-import slide1 from "../assets/images/slides-1.png";
+import slide1 from "../../public/images/slides-1.png";
 
 const Slideshow = () => {
     return (

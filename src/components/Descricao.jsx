@@ -1,4 +1,4 @@
-import img1 from "../assets/images/malta_correr.png";
+import img1 from "../../public/images/malta_correr.png";
 
 const Texto = () => {
     return (

@@ -1,6 +1,6 @@
-import img1 from "../assets/images/lidl.png";
-import img2 from "../assets/images/camara_porto.png";
-import img3 from "../assets/images/agora_porto.png";
+import img1 from "../../public/images/lidl.png";
+import img2 from "../../public/images/camara_porto.png";
+import img3 from "../../public/images/agora_porto.png";
 
 const Parceiros = () => {
     return (
