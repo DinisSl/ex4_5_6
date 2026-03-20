@@ -1,6 +1,9 @@
-import Entidades from '../assets/json/entidades.json';
+import figuras from '../assets/json/entidades.json';
 
-    const Entidade = (name,img,highlight,desc) => {
+
+    const Entidades= figuras["Entidades"]
+
+    const Entidade = ({name,img,highlight,desc}) => {
 
 
     return (
@@ -28,7 +31,7 @@ import Entidades from '../assets/json/entidades.json';
             <h1>
                 Participantes
             </h1>
-            {Entidades.map(E => < Entidade nome={E.nome} img={E.img} highlight={E.highlight} desc={E.desc} />)}
+            {Entidades.map(E => <Entidade nome={E.nome} img={E.img} highlight={E.highlight} desc={E.desc} />)}
         </div>
     )
     }
