@@ -5,7 +5,6 @@ import figuras from '../assets/json/entidades.json';
 
     const Entidade = ({nome,img,highlight,desc}) => {
 
-
     return (
         <div>
             <h2>
@@ -24,7 +23,6 @@ import figuras from '../assets/json/entidades.json';
 
 
     const Galeria =() => {
-
 
     return(
         <div>

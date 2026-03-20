@@ -21,10 +21,10 @@ const Homepage = () => {
                     <Slideshow/>
                     <Descricao/>
                     <Parceiros/>
-                    <Galeria/>
                     <OutrosEventos/>
                     <Table/>
                 </div>
+                <Galeria/>
                 <Formulario/>
             </main>
             <Footer/>
