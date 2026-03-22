@@ -1,40 +1,38 @@
 import figuras from '../assets/json/entidades.json';
+import "../assets/css/GaleriaStyle.css"
+
+const Entidades= figuras["Entidades"]
 
 
-    const Entidades= figuras["Entidades"]
+const Entidade = ({nome,img,highlight,desc}) => {
 
-
-    const Entidade = ({nome,img,highlight,desc}) => {
-
-        return (
-        <div>
-            <h2>
-                {nome}
-            </h2>
+    return (
+        <div className="card">
             <img src={img} alt={nome} />
-            <h2>
-                {highlight}
-            </h2>
-            <h4>
-                {desc}
-            </h4>
+            <div className="card-content">
+                <h2>{nome}</h2>
+                <div className="highlight">{highlight}</div>
+                <p>{desc}</p>
+            </div>
         </div>
     )
-    }
+}
 
 
 
 
-    const Galeria =() => {
+const Galeria =() => {
 
     return(
-        <div>
+        <div className="galeria">
             <h1>
                 Participantes
             </h1>
+            <div className= "grid-galeria">
             {Entidades.map(E => <Entidade nome={E.nome} img={E.img} highlight={E.highlight} desc={E.desc} />)}
+            </div>
         </div>
     )
-    }
+}
 
-    export default Galeria;
+export default Galeria;

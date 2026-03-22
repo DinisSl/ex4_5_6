@@ -30,8 +30,8 @@
     display: grid;
     grid-template-columns: 20px 1fr; /* coluna fixa para o radio */
     gap: 10px;
-    width: 250px;       /* odas as opções com mesma largura */
-    margin: 5px auto;   /* centrado dentro do container */
+    width: 250px;
+    margin: 5px auto;
     text-align: left;
 }
 
