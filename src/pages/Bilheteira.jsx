@@ -1,9 +1,11 @@
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import {useState} from "react";
+import { useNavigate } from 'react-router-dom';
 
 
 const Bilheteira = () => {
+    const navigate = useNavigate();
 
     const [countA, setCountA] = useState(0);
     const [countB, setCountB] = useState(0);
@@ -17,11 +19,12 @@ const Bilheteira = () => {
             return;
         }
 
-        alert(`Ficaste ${total}€ mais leve!!!`);
-
         setCountA(0);
         setCountB(0);
         setCountC(0);
+
+        navigate('/respotastd',
+            {state: {msg: "Bilhetes comprados com sucesso"}});
     }
 
     return (

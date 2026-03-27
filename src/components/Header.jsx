@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'; // 1. Import the Link component
+
 const Header = () => {
     return (
         <>
@@ -9,13 +11,13 @@ const Header = () => {
             <nav>
                 <ul>
                     <li>
-                        <a href="./index.html">Home</a>
+                        <Link to="./">Home</Link>
                     </li>
                     <li>
-                        <a href="form_volun.html">Formulário</a>
+                        <Link to="/formcandidatura">Formulário</Link>
                     </li>
                     <li>
-                        <a href="./bilhetes.html">Bilhetes</a>
+                        <Link to="/bilheteira">Bilhetes</Link>
                     </li>
                 </ul>
             </nav>
