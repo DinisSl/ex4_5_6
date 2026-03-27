@@ -1,4 +1,5 @@
 import {useState} from "react";
+import { useNavigate } from "react-router-dom";
 import "../assets/css/FormStyle.css"
 
 const Formulario = () => {
@@ -7,9 +8,24 @@ const Formulario = () => {
 
     const [opcaoSelecionada, setOpcaoSelecionada] = useState("");
 
+    const navigate = useNavigate();
+
     const changeHandler = (e) => {
         setOpcaoSelecionada(e.target.value);
     }
+
+    const handleSubmit = () => {
+        let stats = localStorage.getItem("inqueritoStats");
+        if (stats === null) {
+            stats = {};
+            opcoes.forEach(o => stats[o] = 0);
+        } else {
+            stats = JSON.parse(stats);
+        }
+        stats[opcaoSelecionada]++;
+        localStorage.setItem("inqueritoStats", JSON.stringify(stats));
+        navigate("/resultados", { state: { resposta: opcaoSelecionada } });
+    };
 
     return (
         <div className="containerf">
@@ -19,7 +35,7 @@ const Formulario = () => {
                     opcoes.map
                     (o =>
                         <>
-                            <label className = "option">
+                            <label className = "option" key={o}>
                                 <input
                                     name="grp1"
                                     type="radio"
@@ -30,7 +46,7 @@ const Formulario = () => {
                         </>
                     )
                 }
-                <button onClick={() => alert("As pessoas adoraram a presença de " + opcaoSelecionada)}>Submeter</button>
+                <button onClick={handleSubmit}>Submeter</button>
             </div>
         </div>
     );

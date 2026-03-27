@@ -1,0 +1,45 @@
+.resultados-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.resultados-container h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.resultados-container h2 {
+    color: #0077cc;
+    margin-bottom: 20px;
+}
+
+.resultados-container h3 {
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.resultados-container p {
+    font-size: 18px;
+    margin: 6px 0;
+}
+
+.resultados-container button {
+    margin-top: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.resultados-container button:hover {
+    background-color: #005fa3;
+}
