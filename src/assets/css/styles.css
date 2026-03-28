@@ -54,7 +54,8 @@ nav a:hover {
     border-bottom: 0 solid darkred;
 }
 
-#contador {
+
+ #contador {
     background-color: #fff8d6;
     text-align: center;
     font-size: 2em;
@@ -62,6 +63,11 @@ nav a:hover {
     padding: 15px 0;
     border-bottom: 2px solid #e0d9b5;
 }
+
+
+
+
+
 
 .container {
     margin: 0;
@@ -79,45 +85,54 @@ nav a:hover {
 }
 
 /*
-********************** Slide Show **********************************************************
+********************** Slide Show  **********************
 */
 #box0 {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
-
 #slideShow {
     width: 900px;
     height: 600px;
-    max-width: 80%;
-    margin: 1% auto;
+    max-width: 95%;
+    margin: 20px auto;
     position: relative;
-}
-
-#slideShow button {
-    background-color: #7e8691ba;
-    border-color: transparent;
-    position: absolute;
-    font-size: 50px;
-    color: white;
-    height: 60px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-#back { left: 10px; }
-#forward { right: 10px; }
-
-#box0 button:hover {
-    background-color: #444444;
-    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 #slideShowImg {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Keeps the aspect ratio but fills the box */
+    object-fit: cover;
 }
+
+
+#slideShow button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#back { left: 15px; }
+#forward { right: 15px; }
+
 
 /*
 *********************** Index **************************************************************
@@ -291,50 +306,68 @@ form fieldset {
 */
 
 
+.corrida-container {
+    width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+}
 
-    .corrida-container {
-        width: 400px;
-        margin: 40px auto;
-        padding: 20px;
-        border: 1px solid #ccc;
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    }
+.corrida-container h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
 
+.corrida-container .ticket {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
 
+.corrida-container .ticket:hover {
+    background-color: #f1f1f1;
+}
 
-    .corrida-container h3 {
-        font-size: 16px;
-        margin: 10px 0;
-         color: #555;
-    }
+.corrida-container button {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #3498db;
+    color: white;
+    transition: transform 0.1s, background-color 0.2s;
+}
 
+.corrida-container button:hover {
+    background-color: #2980b9;
+}
 
-    .corrida-container .ticket {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 10px 0;
-        padding: 5px;
-        background-color: #fafafa;
-    }
+.corrida-container button:active {
+    transform: scale(0.96);
+}
 
-
-    .corrida-container button {
-        padding: 5px 10px;
-        cursor: pointer;
-        border: none;
-        border-radius: 6px;
-        background-color: #3498db;
-        color: white;
-    }
-
-
-    .corrida-container .total {
-        margin-top: 15px;
-        font-weight: bold;
-    }
-
-
+.corrida-container .total {
+    margin-top: 25px;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    color: #27ae60;
+    border-top: 2px dashed #eee;
+}
 
 
 /*
