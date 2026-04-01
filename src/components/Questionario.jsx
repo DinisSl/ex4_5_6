@@ -2,7 +2,7 @@ import {useState} from "react";
 import { useNavigate } from "react-router-dom";
 import "../assets/css/FormStyle.css"
 
-const Formulario = () => {
+const Questionario = () => {
 
     const opcoes = ["Quim Barreiros", "Pepe", "Mariana Machado", "Rui Pinto"];
 
@@ -52,4 +52,4 @@ const Formulario = () => {
     );
 };
 
-export default Formulario;
+export default Questionario;

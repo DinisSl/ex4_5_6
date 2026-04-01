@@ -8,7 +8,7 @@ import Parceiros from "../components/Parceiros.jsx";
 import OutrosEventos from "../components/OutrosEventos.jsx";
 import Footer from "../components/Footer.jsx";
 import Galeria from "../components/Galeria.jsx";
-import Formulario from "../components/Formulario.jsx";
+import Questionario from "../components/Questionario.jsx";
 
 const Homepage = () => {
     return (
@@ -24,8 +24,6 @@ const Homepage = () => {
                     <OutrosEventos/>
                     <Table/>
                 </div>
-                <Galeria/>
-                <Formulario/>
             </main>
             <Footer/>
         </>

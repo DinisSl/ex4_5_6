@@ -24,7 +24,7 @@ const Resultados = () => {
                 </p>
             )}
 
-            <button onClick={() => navigate("/")}>Voltar</button>
+            <button onClick={() => navigate("/nseionome")}>Voltar</button>
         </div>
     );
 };
