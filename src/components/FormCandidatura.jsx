@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Header from "../components/Header.jsx";
-import Footer from "../components/Footer.jsx";
+
 
 const FormCandidatura = () => {
     const navigate = useNavigate();
@@ -46,10 +45,9 @@ const FormCandidatura = () => {
             {state: {msg: "Candidatura submetida com sucesso!!!"}});
     };
 
+
     return (
-        <>
-            <Header/>
-            <div className="container">
+        <div className="container">
             <div id="box0-container">
                 <form onSubmit={handleSubmit}>
                     <div>
@@ -172,9 +170,7 @@ const FormCandidatura = () => {
             </div>
 
         </div>
-            <Footer/>
-        </>
-    );
+    )
 }
 
 export default FormCandidatura;

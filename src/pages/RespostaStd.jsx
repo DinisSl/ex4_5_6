@@ -6,7 +6,7 @@ const RespostaStd = () => {
     const location = useLocation();
     const msgRecebida = location.state.msg;
 
-    const myStyle = {
+    const style = {
         textAlign: "center",
         color: "#28a745",
         marginTop: "50px",
@@ -16,7 +16,7 @@ const RespostaStd = () => {
     return (
         <>
             <Header/>
-                <div style={myStyle}>
+                <div style={style}>
                     <h1>{msgRecebida}</h1>
                 </div>
 

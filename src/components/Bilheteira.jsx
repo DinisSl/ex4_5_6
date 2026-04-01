@@ -1,7 +1,5 @@
-import Header from "../components/Header.jsx";
-import Footer from "../components/Footer.jsx";
-import { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import {useNavigate} from "react-router-dom";
+import {useState} from "react";
 
 const Bilheteira = () => {
     const navigate = useNavigate();
@@ -26,9 +24,7 @@ const Bilheteira = () => {
     }
 
     return (
-        <>
-            <Header />
-            <div className="corrida-wrapper">
+        <div className="corrida-wrapper">
                 <div className="corrida-container">
 
 
@@ -67,8 +63,6 @@ const Bilheteira = () => {
 
                 </div>
             </div>
-            <Footer />
-        </>
     )
 }
 
